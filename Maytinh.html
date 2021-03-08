@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính</title>
+</head>
+<body>
+<th1> Caculator</th1>
+<input type="number" id="input1">
+<input type="number" id="input2">
+</br>
+<button onclick="Addition()">Addition(+)</button>
+<button onclick="Subtraction()">Subtraction(-)</button>
+<button onclick="Multipilication()">Multipilication(x)</button>
+<button onclick="Division()">Division(/)</button>
+<p id="ketqua" style="color: blue"></p>
+<script>
+    function Addition(){
+        let number1=document.getElementById("input1").value;
+        let number2=document.getElementById("input2").value;
+            input1=parseInt(number1);
+            input2=parseInt(number2);
+        let result=input1+input2;
+        document.getElementById('ketqua').innerText="Result Addition="+result;
+    }
+    function Subtraction(){
+        let number1=document.getElementById("input1").value;
+        let number2=document.getElementById("input2").value;
+        input1=parseInt(number1);
+        input2=parseInt(number2);
+        let result=input1-input2;
+        document.getElementById('ketqua').innerText="Resul Subtraction="+result;
+    }
+    function Multipilication(){
+        let number1=document.getElementById("input1").value;
+        let number2=document.getElementById("input2").value;
+        input1=parseInt(number1);
+        input2=parseInt(number2);
+        let result=input1*input2;
+        document.getElementById('ketqua').innerText="Result Multipilication="+result;
+    }
+    function Division(){
+        let number1=document.getElementById("input1").value;
+        let number2=document.getElementById("input2").value;
+        input1=parseInt(number1);
+        input2=parseInt(number2);
+        let result=input1/input2;
+        document.getElementById('ketqua').innerText="Result Division="+result;
+    }
+</script>
+</body>
+</html>
