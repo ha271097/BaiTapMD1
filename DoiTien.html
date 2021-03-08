@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi Tiền</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="1">
+            </td>
+        <td>
+            <select id="2">
+                <option value="23000">VietNam</option>
+                <option value="1">Mỹ</option>
+            </select>
+        </td>
+        <td>
+            <select id="3">
+                <option value="23000">VND</option>
+                <option value="1">USD</option>
+            </select>
+    </tr>
+
+</table>
+<p id="ketqua" style="color: blue"></p>
+<button onclick="convert()">Convert</button>
+<script>
+    function convert(){
+        let A=document.getElementById("1").value;
+        let B=document.getElementById("2").value;
+        let C=document.getElementById("3").value;
+        let D=(A*C)/B;
+        document.getElementById("ketqua").innerText="result="+D +"VND";
+    }
+</script>
+</body>
+</html>
