@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh thang</title>
+</head>
+<body>
+    <input type="number" id="month"/>
+<!--    <input type="button" id="day" onclick="input()" value="Tim Kiem So Ngay">-->
+    <button onclick="input()">Tim kiem so ngay</button>
+    <p id="print"></p>
+</body>
+<script>
+    function input() {
+        let number = document.getElementById('month').value;
+        switch (number) {
+            case'1':
+            case'3':
+            case'5':
+            case'7':
+            case'8':
+            case'10':
+            case'12':
+                document.getElementById('print').innerText = 'Thang' + number + 'co 31 ngay';
+                break;
+            case'2':
+                document.getElementById('print').innerText ='Thang 2 co 28 or 29 ngay';
+                break;
+            case '4':
+            case '6':
+            case '9':
+            case '11':
+                document.getElementById('print').innerText = 'Thang ' + number + 'co 30 ngay';
+                break;
+        }
+    }
+</script>
+
+</html>
