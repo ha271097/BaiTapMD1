@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sigin</title>
+</head>
+<body>
+<script>
+    let accnount=(prompt('Enter id'));
+
+    if (accnount=='Admin'){
+        let password=(prompt('Enter passeord'));
+        if (password=='TheMaster'){
+            alert('Wellcome');
+        }else if(password=='1'){
+            alert('Canceld');
+        }else
+            alert('Wrong password');
+    }else if(accnount='2'){
+        alert('Canceld');
+    }else {
+        alert("I don't know you");
+    }
+</script>
+</body>
+</html>
